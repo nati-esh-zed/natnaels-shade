@@ -1,15 +1,31 @@
 {
 	"name": "Natnael's shade",
 	"colors": {
+		"window.activeBorder": "{{border1}}",
+		"window.inactiveBorder": "{{border}}",
+
 		"titleBar.activeBackground": "{{titleBarActiveBackground}}",
 		"titleBar.inactiveBackground": "{{titleBarInactiveBackground}}",
-		"titleBar.border": "{{titleBarBorder}}",
-
+		"titleBar.border": "{{borderAccent1}}",
+		"titleBar.activeForeground": "{{dimForeground2}}",
+		"titleBar.inactiveForeground": "{{dimForeground1}}",
+		
 		"editor.background": "{{background}}",
 		"editor.foreground": "{{foreground}}", 
+		"editorWidget.border": "{{borderAccent}}",
+		"pickerGroup.border": "{{borderAccent}}",
+		"peekView.border": "{{borderAccent}}",
+		"inputOption.activeBorder": "{{borderAccent}}",
+
 		"foreground": "{{foreground}}",
+		"editorError.foreground": "{{editorErrors}}",
+		"minimap.errorHighlight": "{{minimapErrors}}",
+		"editorWarning.foreground": "{{editorWarnings}}",
+		"minimap.warningHighlight": "{{minimapWarnings}}",
 
 		"statusBar.background": "{{statusBarBackground}}",
+		"statusBar.noFolderBackground": "{{statusBarBackground}}",
+		"statusBar.debuggingBackground": "{{statusBarBackground}}",
 		"statusBar.foreground": "{{statusBarForeground}}",
 		"statusBar.border": "{{statusBarBorder}}",
 		"statusBarItem.remoteBackground": "{{statusBarItemRemoteBackground}}",
@@ -20,24 +36,24 @@
 		"statusBarItem.compactHoverBackground": "{{statusBarItemHoverBackground}}",
 		"statusBarItem.prominentBackground": "{{statusBarItemProminentBackground}}",
 
+
 		"sideBar.background": "{{sideBarBackground}}",
 		"sideBar.foreground": "{{sideBarForeground}}",
 		"sideBarTitle.background": "{{sideBarTitleBackground}}",
 		"sideBarTitle.border": "{{sideBarTitleBorder}}",
 		"sideBar.border": "{{sideBarBorder}}",
+		"sideBarActivityBarTop.border": "{{borderAccent1}}",
+		"activityBar.activeBorder": "{{borderAccent2}}",
 		"sideBarSectionHeader.background": "{{sideBarSectionHeaderBackground}}",
 		
 		"icon.foreground": "{{iconForeground}}",
-		// "list.activeSelectionBackground": "{{listActiveSelectionBackground}}",
 		"list.inactiveSelectionBackground": "{{listInactiveSelectionBackground}}",
 		"list.activeSelectionForeground": "{{listActiveSelectionForeground}}",
 		"list.inactiveSelectionForeground": "{{listInactiveSelectionForeground}}",
-		// "list.activeSelectionIconForeground": "{{listActiveSelectionIconForeground}}",
 		"list.warningForeground": "{{listWarningForeground}}",
 		"list.errorForeground": "{{listErrorForeground}}",
 
 		"activityBar.background": "{{activityBarBackground}}",
-		// "activityBar.activeBackground": "{{activityBarActiveBackground}}",
 		"activityBar.foreground": "{{activityBarForeground}}",
 		"activityBar.inactiveForeground": "{{activityBarInactiveForeground}}",
 		"activityBar.border": "{{activityBarBorder}}",
@@ -46,8 +62,13 @@
 		"editorLineNumber.foreground": "{{editorLineNumberForeground}}",
 		"editorLineNumber.activeForeground": "{{editorLineNumberActiveForeground}}",
 		"editor.foldBackground": "{{editorFoldBackground}}",
+		"editorGroup.border": "{{editorGroupBorder}}",
+		"editorGroupHeader.border": "{{editorGroupHeaderBorder}}",
+		"editorHoverWidget.background": "{{editorHoverWidgetBackground}}",
+		"editorHoverWidget.border": "{{editorHoverWidgetBorder}}",
 
 		"panel.background": "{{panelBackground}}",
+		"panel.border": "{{panelBorder}}",
 		"panelTitle.border": "{{panelTitleBorder}}",
 		"panelTitle.activeBorder": "{{panelTitleActiveBorder}}",
 		"panelTitle.activeForeground": "{{panelTitleActiveForeground}}",
@@ -55,28 +76,71 @@
 
 		"menu.background": "{{menuBackground}}",
 		"menu.foreground": "{{menuForeground}}",
+		"menu.border": "{{menuBorder}}",
+		"menu.separatorBackground": "{{borderAccent}}",
+
+		"badge.background": "{{badges}}",
+		"profileBadge.background": "{{badges}}",
+		"extensionBadge.remoteBackground": "{{badges}}",
+		"panelTitleBadge.background": "{{badges}}",
+		"activityBarBadge.background": "{{badges}}",
+		"activityErrorBadge.background": "{{errorBadgeBackground}}",
+		"activityWarningBadge.background": "{{warningBadgeBackground}}",
+		"badge.foreground": "{{badgesForeground}}",
+		"profileBadge.foreground": "{{badgesForeground}}",
+		"extensionBadge.remoteForeground": "{{badgesForeground}}",
+		"panelTitleBadge.foreground": "{{badgesForeground}}",
+		"activityBarBadge.foreground": "{{badgesForeground}}",
+		"activityErrorBadge.foreground": "{{errorBadgeForeground}}",
+		"activityWarningBadge.foreground": "{{warningBadgeForeground}}",
 
 		"quickInput.background": "{{quickInputBackground}}",
+		"editorHint.border": "{{borderAccent}}",
+		"editorInfo.border": "{{borderAccent}}",
+		"notifications.border": "{{borderAccent}}",
+		"panelSection.border": "{{borderAccent}}",
+		"notificationToast.border": "{{borderAccent}}",
 
+
+		"commandCenter.background": "{{inputBackground}}",
+		"commandCenter.border": "{{border}}",
+		"commandCenter.activeBorder": "{{borderAccent}}",
+		"commandCenter.inactiveBorder": "{{inputBorder}}",
 		"input.background": "{{inputBackground}}",
-		// "banner.background": "{{bannerBackground}}",
-		// "gauge.background": "{{gaugeBackground}}",
+		"input.border": "{{inputBorder}}",
+		"panelInput.border": "{{inputBorder}}",
+		"inlineChatInput.border": "{{inputBorder}}",
+
 		"tab.border": "{{tabBorder}}",
+		"tab.activeBorder": "{{tabActiveBorder}}",
+		"tab.activeBackground": "{{tabActiveBackground}}",
 		"tab.inactiveBackground": "{{tabInactiveBackground}}",
 		"tab.inactiveForeground": "{{tabInactiveForeground}}",
+		"tab.unfocusedActiveForeground": "{{dimForeground2}}",
+		"tab.unfocusedInactiveForeground": "{{dimForeground2}}",
 		"tab.activeForeground": "{{foreground}}",
+		"tab.lastPinnedBorder": "{{tabLastPinnedBorder}}",
+		"tab.selectedBorderTop": "{{tabSelectedBorderTop}}",
 		"editorGroupHeader.tabsBackground": "{{editorGroupHeaderTabsBackground}}",
-		"editorGroupHeader.tabsBorder": "{{tabBorder}}",
-		
-		// "tab.hoverBackground": "{{tabHoverBackground}}",
-		// "button.hoverBackground": "{{buttonHoverBackground}}",
-		// "toolbar.hoverBackground": "{{toolbarHoverBackground}}",
+
+		"dropdown.background": "{{quickInputBackground}}",
 
 		"editorBracketHighlight.foreground1": "{{bracket1}}",
 		"editorBracketHighlight.foreground2": "{{bracket2}}",
 		"editorBracketHighlight.foreground3": "{{bracket3}}",
 		"editorBracketHighlight.foreground4": "{{bracket4}}",
-		"editorBracketHighlight.unexpectedBracket.foreground": "{{exceptions}}"
+		"editorBracketHighlight.unexpectedBracket.foreground": "{{exceptions}}",
+	
+		"notebook.cellBorderColor": "{{notebookCellBorderColor}}",
+
+		"dropdown.border": "{{border}}",
+		"gauge.border": "{{border}}",
+		"focusBorder": "{{border}}",
+		"widget.border": "{{border}}",
+		"diffEditor.border": "{{border}}",
+		"merge.border": "{{border}}",
+		
+		"scrollbar.shadow": "{{transparent}}"
 	},
 	"semanticTokenColors": {
 		"variable.readonly.defaultLibrary": "{{accent}}",
@@ -117,7 +181,7 @@
 			"name": "Invalid - Illegal",
 			"scope": "invalid.illegal",
 			"settings": {
-				"foreground": "#b60c0c"
+				"foreground": "{{errors}}"
 			}
 		},
 		{
@@ -472,14 +536,14 @@
 			"name": "Markup: Changed",
 			"scope": "markup.changed",
 			"settings": {
-				"foreground": "#000000"
+				"foreground": "{{foreground}}"
 			}
 		},
 		{
 			"name": "Markup: Deletion",
 			"scope": "markup.deleted",
 			"settings": {
-				"foreground": "#000000"
+				"foreground": "{{foreground}}"
 			}
 		},
 		{
@@ -493,21 +557,21 @@
 			"name": "Markup: Error",
 			"scope": "markup.error",
 			"settings": {
-				"foreground": "#660000"
+				"foreground": "{{errors}}"
 			}
 		},
 		{
 			"name": "Markup: Insertion",
 			"scope": "markup.inserted",
 			"settings": {
-				"foreground": "#000000"
+				"foreground": "{{foreground}}"
 			}
 		},
 		{
 			"name": "Markup: Link",
 			"scope": "meta.link",
 			"settings": {
-				"foreground": "#4B83CD"
+				"foreground": "{{links}}"
 			}
 		},
 		{
@@ -517,21 +581,21 @@
 				"markup.raw"
 			],
 			"settings": {
-				"foreground": "#777777"
+				"foreground": "{{foreground1}}"
 			}
 		},
 		{
 			"name": "Markup: Prompt",
 			"scope": "markup.prompt",
 			"settings": {
-				"foreground": "#777777"
+				"foreground": "{{foreground1}}"
 			}
 		},
 		{
 			"name": "Markup: Heading",
 			"scope": "markup.heading",
 			"settings": {
-				"foreground": "#AA3731"
+				"foreground": "{{headings}}"
 			}
 		},
 		{
@@ -545,7 +609,7 @@
 			"name": "Markup: Traceback",
 			"scope": "markup.traceback",
 			"settings": {
-				"foreground": "#660000"
+				"foreground": "{{errors}}"
 			}
 		},
 		{
@@ -559,14 +623,14 @@
 			"name": "Markup Quote",
 			"scope": "markup.quote",
 			"settings": {
-				"foreground": "#7A3E9D"
+				"foreground": "{{quotes}}"
 			}
 		},
 		{
 			"name": "Markup Lists",
 			"scope": "markup.list",
 			"settings": {
-				"foreground": "#4B83CD"
+				"foreground": "{{lists}}"
 			}
 		},
 		{
@@ -576,7 +640,7 @@
 				"markup.italic"
 			],
 			"settings": {
-				"foreground": "#448C27"
+				"foreground": "{{stylings}}"
 			}
 		},
 		{
@@ -584,7 +648,7 @@
 			"scope": "markup.inline.raw",
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#AB6526"
+				"foreground": "{{inlineCode}}"
 			}
 		},
 		{
@@ -595,21 +659,21 @@
 				"meta.separator"
 			],
 			"settings": {
-				"foreground": "#434343"
+				"foreground": "{{foreground1}}"
 			}
 		},
 		{
 			"name": "Extra: Diff From",
 			"scope": "meta.diff.header.from-file",
 			"settings": {
-				"foreground": "#434343"
+				"foreground": "{{foreground1}}"
 			}
 		},
 		{
 			"name": "Extra: Diff To",
 			"scope": "meta.diff.header.to-file",
 			"settings": {
-				"foreground": "#434343"
+				"foreground": "{{foreground1}}"
 			}
 		}
 	]

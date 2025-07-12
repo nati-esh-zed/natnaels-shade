@@ -5,6 +5,7 @@
   "version": "1.0.2",
   "publisher": "nati-esh-zed",
   "repository": "https://github.com/nati-esh-zed/natnaels-shade",
+  "icon": "logo.png",
   "scripts": {
     "dev": "node --watch generate.js",
     "generate": "node generate.js"
